@@ -43,8 +43,12 @@ ul li {
   padding-top: 10%;
 }
 #pitch #text{
-font-weight:bold;
+font-weight:bolder;
 font-size:5ch;
+}
+#pitch #what{
+  font-size: 2ch;
+  font-weight: bold;
 }
 #types-list{
   width: 25%;
@@ -67,13 +71,20 @@ font-size:5ch;
 #coffee-details {
   border: solid;
   width: 30%;
-background-color:burlywood;}
+background-color:burlywood;
+}
+
+#coffee-details #title{
+  font-weight: bold;
+  font-size: large;
+}
 
 #Button {
   width: 100px;
   display: flex;
   justify-content: center;
   padding-left: 20%;
+  
 }
 
 #footer {
