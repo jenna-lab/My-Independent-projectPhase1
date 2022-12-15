@@ -31,28 +31,34 @@
       <div id="landing-page">
         <div id="pitch">
           <p>WHAT TIME IS IT?</p>
-          <h1>COFFEE O'CLOCK.</h1>
+          <h1 id="text">COFFEE O'CLOCK.</h1>
         </div>
 
         <div id="types-list" class="list-container">
        <!--side menu-->
        <ul id="types">
-        <li id="type item">see types of coffee here</li>
+        <li id="type item">[COFFEE DRINKS]</li>
        </ul>
         </div>
 
         <!--posters-->
-        <div id="image">
-          <img src="./images/midddback.jpeg" alt="poster"/>
+        <div id="poster"><img src="./images/back2.jpg">
         </div>
+
 <!--showing all the info-->
 <div id="coffee-details">
   <div id="title">[TYPE OF COFFEE HERE]</div>
-  <div id="ingredients">[INSERT INGREDIENTS]</div>
+  <div id="ingredients">ingredients:[INSERT INGREDIENTS]</div>
   <div id="description">[DESCRIPTION FOR FLAVOUR]</div>
-  <div id="Button" onclick={renderTypes()}><button id="order-now-button">NEXT</button></div>
+  <img id="image"src="" alt="LOADING..."/>
+  <div id="price">[insert price]</div>
+  <div id="Button" onclick={renderTypes()}><button id="order-now-button">ORDER</button></div>
+ <div id="navigation-buttons">
+  <div id="previous-button">
+    <a href="#" class="previous">&laquo; Previous</a></div>
+  <div id="next-button"> <a href="#" class="next">Next &raquo;</a></div>
 </div>
-         
+  </div>       
       <!--footer-->
       <div id="footer">
        <div><p>Share Your Experience or Suggestions</p></div>

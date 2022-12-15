@@ -7,7 +7,7 @@ body {
   background-color: burlywood;
   float: centre;
   font-family: sans-serif;
-  background-image: url(./images/backk.jpg);
+  background-image: url(./images/backfinal.jpg);
   background-size: cover;
 }
 
@@ -36,31 +36,38 @@ ul li {
 }
  #pitch {
   flex: 0 0 15%;
-  width: 20%;
+  width: 30%;
   text-align: center;
   border: 5px;
-  background-color: blue;
   height: 350px;
   padding-top: 10%;
 }
+#pitch #text{
+font-weight:bold;
+font-size:5ch;
+}
 #types-list{
-  padding-top: 20%;
   width: 25%;
-  background-color: red;
+  background-color:burlywood;
 }
 
-#image{
+#poster{
   width: 25%;
 }
-#image img{
+#poster img{
   width: 100%;
   height: 100%;
+}
+#image{
+  height: 100px;
+  display: flex;
+  padding-left: 80px;
+  width:110px;
 }
 #coffee-details {
   border: solid;
   width: 30%;
-  background-color: orange;
-}
+background-color:burlywood;}
 
 #Button {
   width: 100px;
@@ -78,6 +85,21 @@ ul li {
 
 .copyright {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 100px;
   padding-left: 140px;
+}
+#coffee-details #title{
+  padding:10%;
+}
+#coffee-details #ingredients{
+  padding:10px;
+}
+#coffee-details #description{
+  padding: 10px;
+}
+#coffee-details #price{
+  padding: 20px;
+}
+#coffee-details #button{
+  padding: 10px;
 }

@@ -4,5 +4,22 @@ fetch("http://localhost:3000/types")
 
   const renderTypes = (types) =>{
     console.log(types)
+   const typesList =document.getElementById(`types-list`)
+   //displaying list in the browser
+   types.forEach((type) => {
+    const li = document.createElement("li");
+    li.innerText = type.title;
+    typesList.append(li);
+    li.addEventListener(`click`, () => renderCoffeeDetails(type));
+  });
+  }
+  const renderCoffeeDetails = (type) =>{
+    console.log(type);
+    document.getElementById(`image`).src = type.image;
+    document.getElementById(`title`).innerHTML = type.title;
+    document.getElementById(`description`).innerHTML=type.description
+    document.getElementById(`ingredients`).innerHTML = type.ingredients;
+    document.getElementById(`price`).innerHTML = type.price;
     
   }
+ 
