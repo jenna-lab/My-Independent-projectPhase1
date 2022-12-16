@@ -14,6 +14,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <link rel="stylesheet" href="blurt.min.css"/>
+  <script src="blurt.min.js"></script>
   <body>
     <div class="container">
       <!--navbar-->
@@ -53,7 +55,7 @@
   <img id="image"src="" alt="LOADING..."/>
   <div id="price">[Price]</div>
   <button id="Button" onclick={renderCoffeeDetails()}>ORDER</button>
-  <button id="payment">Payment Method</button>
+  <button id="payment" type="button" onclick="prompt('Please enter payment method', ' ');" >Payment Method</button>
   </div>  
        
         <button class="open-button" onclick="openForm()">Feedback or Suggestion?</button>

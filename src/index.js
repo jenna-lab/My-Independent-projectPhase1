@@ -28,5 +28,5 @@ Button.addEventListener("click", () => {
 });
  const Payment =document.getElementById(`payment`).innerHTML
  payment.addEventListener("click",() => {
-  
+  prompt("ENTER PAYMENT METHOD")
  })
