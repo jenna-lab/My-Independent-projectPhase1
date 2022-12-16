@@ -21,7 +21,7 @@
         <h1>j's cafe</h1>
         <ul>
           <li> <a href="">HOME</a></li>
-          <li> <a href="">MENU </a></li>
+          <li> <a href="">PAYMENT METHOD</a></li>
           <li><a href="">ABOUT</a></li>
           <li><a href="">CONTACT</a></li>
           <li><i class="fa fa-search" aria-hidden="true"></i></li>
@@ -48,33 +48,35 @@
 <!--showing all the info-->
 <div id="coffee-details">
   <div id="title">[TYPE OF COFFEE HERE]</div>
-  Ingredients:<div id="ingredients">Ingredients:[INSERT INGREDIENTS]</div>
-  Description:<div id="description">[DESCRIPTION FOR FLAVOUR]</div>
+  Ingredients:<div id="ingredients"></div>
+  Description:<div id="description"></div>
   <img id="image"src="" alt="LOADING..."/>
-  <div id="price">[insert price]</div>
-  <div id="Button" onclick={renderTypes()}><button id="order-now-button">ORDER</button></div>
- <div id="navigation-buttons">
-  <div id="previous-button">
-    <a href="#" class="previous">&laquo; Previous</a></div>
-  <div id="next-button"> <a href="#" class="next">Next &raquo;</a></div>
-</div>
-  </div>       
-      <!--footer-->
-      <div id="footer">
-       <div><p>Share Your Experience or Suggestions</p></div>
-        <div id="socials">
-          <p>
-            <i class="fa fa-envelope-o" aria-hidden="true"></i
-            ><a href=""> jensam209@gmail.com</a>
-          </p>
+  <div id="price">[Price]</div>
+  <button id="Button" onclick={renderCoffeeDetails()}>ORDER</button>
+  </div>  
+       
+        <button class="open-button" onclick="openForm()">Feedback or Suggestion?</button>
+        <div class="chat-popup" id="myForm">
+          <form action="" class="form-container">
+            <h1>Chat</h1>
+        
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+        
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
         </div>
-        <div class="contactme">
-          <p>
-            <i class="fa fa-phone" aria-hidden="true"></i
-            ><a href=""> +254702003276</a>
-          </p>
-        </div>
-      </div>
+        
+        <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
       <section class="copyright">
         <div id="copyright">
           <p>
