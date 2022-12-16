@@ -26,4 +26,7 @@ const button = document.getElementById(`Button`).innerHTML;
 Button.addEventListener("click", () => {
   alert("Coming Right Up!");
 });
-
+ const Payment =document.getElementById(`payment`).innerHTML
+ payment.addEventListener("click",() => {
+  
+ })
