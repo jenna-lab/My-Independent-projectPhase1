@@ -24,9 +24,9 @@ const renderCoffeeDetails = (type) => {
 const button = document.getElementById(`Button`).innerHTML;
 
 Button.addEventListener("click", () => {
-  alert("Coming Right Up!");
+  prompt("Coming Right Up!");
 });
  const Payment =document.getElementById(`payment`).innerHTML
  payment.addEventListener("click",() => {
-  prompt("ENTER PAYMENT METHOD")
+  prompt("ENTER PAYMENT METHOD");
  })
